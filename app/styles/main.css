@@ -1,249 +1,165 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
 }
 
-body {
-  padding: 0;
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    min-height:500px;
 }
 
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.row-footer{
+    background-color: #AfAfAf;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
 }
-
-
-/* Custom page header */
-
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-
-
-/* Make the masthead heading the same height as the navigation */
-
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-
-/* Custom page footer */
-
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow>hr {
-  margin: 30px 0;
-}
-
-
-/* Main marketing message and sign up button */
-
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #7986CB ;
+    color:floralwhite;
 }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     background: white;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: hotpink;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+ .navbar-inverse .navbar-nav > .open > a:hover,
+ .navbar-inverse .navbar-nav > .open > a:focus {
+     color: hotpink;
+ 
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #303F9F;
+    color:#eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}
+
+a:hover svg {
+    fill:hotpink;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a svg {
+    -webkit-transition: 0.3s ease, all;
+    transition: 0.3s ease, all;
+}
+
+a svg{
+      margin-left: 45%;
+}
+
+.navbar a{
+  font-family: "canada-type-gibson", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .06em;
+    border-bottom: none;
+    display: inline-block;
+    padding-left: 35px;
 }
 
 
-/* Supporting marketing content */
-
-.marketing {
-  margin: 40px 0;
+.wishrupt .navbar-inverse .navbar-nav > li > a:hover,
+.wishrupt .navbar-inverse .navbar-header   a:hover{
+  color: hotpink;
 }
 
-.marketing p+h4 {
-  margin-top: 28px;
+.wishrupt .navbar-inverse .navbar-nav > li > a,
+.wishrupt .navbar-inverse .navbar-header   a{
+  color :rgba(10, 10, 10, 0.74);
 }
 
-
-/* Responsive: Portrait tablets and up */
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-  .form-signin {
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-  }
-  .form-signin input {
-    margin: 5px;
-  }
-
-  .landing{
-    background-image: url('/images/landing.jpg');
-    height: 100%;
-    widows: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .form-signin {
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-  }
-  .form-signin input {
-    margin: 5px;
-  }
-  .quick-button-group {
-    margin-left: 30%;
-  }
-  .btn-save {
-    margin-left: 30%;
-  }
-  h4 {
-    text-align: center;
-    background: rgba(51, 122, 183, .5);
-    padding: 10px;
-  }
-  .home {
-    width: 100%;
-    height: 100%;
-  }
-  .home .buy {
-    background-image: url("/images/Buy.png");
-  }
-  .home .card {
-    background-image: url("/images/Card in Use Filled.png");
-  }
-  .home .checked {
-    background-image: url("/images/Check Filled.png");
-  }
-  .home .money {
-    background-image: url("/images/Money Box Filled.png");
-  }
-  .home .rupee {
-    background-image: url("/images/Rupee Filled.png");
-  }
-  .home .cash {
-    background-image: url("/images/Receive Cash Filled.png");
-  }
-  .home .img-icon {
-    height: 100%;
-    width: 50%;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-    border: #cae0ca solid 1px;
-    background-position: 30px;
-  }
-  .home .row-custom {
-    height: 150px;
-    margin: 0px;
-  }
-  .home .row-custom span {
-    position: absolute;
-    top: 80%;
-    align-self: center;
-    left: -4%;
-    width: 100%;
-    text-align: center;
-  }
-  .shubh-labh-panel {
-    background: rgba(187, 241, 187, 0.56);
-    border: #b6bdb6 2px solid;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: #dde6dd 3px 3px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    height: 120px;
-    list-style: none;
-    margin-left: -45px;
-  }
+.wishrupt{
   
-  .custom-height {
-    height: 70px;
-  }
-  
-  .shubh-labh-panel .item-box {
-    position: relative;
-    float: left;
-  }
-  .shubh-labh-panel input {
-    margin-bottom: 2px;
-    margin-left: 10px;
-  }
-  .shubh-labh-panel .number {
-    width: 50%
-  }
-  .shubh-labh-panel .text {
-    width: 100%
-  }
-  .shubh-labh-panel input[type="text"] {
-    width: 80%;
-  }
-  .shubh-labh-panel input[type="number"] {
-    width: 80%;
-  }
-  .shubh-labh-panel label {
-    font-size: 11px;
-    margin-left: 10px;
-  }
-  .shubh-labh-panel .btn-add-more {
-    width: 50px;
-    height: 29px;
-    position: relative;
-    margin-left: 101%;
+}
+.wishrupt .navbar-inverse .navbar-nav span{
+padding : 5px;
+}
+
+.wishrupt .navbar-inverse {
+  border-color:white; 
+}
+
+.wishrupt .home{
+      margin-top: 10px;
+      padding: 5px;
+}
+
+.main-container h1{
+      visibility: visible;
+    animation-name: fadeInDown;
+    font-size: 40px;
+    line-height: 55px;
+    /* margin: 0 0 50px 0; */
+    max-width: 90%;
+    font-family: "canada-type-gibson",sans-serif;
+    font-weight: 400;
+    margin-top: 10%;
+}
+
+.main-container h4{
+          visibility: visible;
+    animation-name: fadeInDown;
+    font-size: 25px;
+    line-height: 35px;
+    /* margin: 0 0 50px 0; */
+    max-width: 90%;
+    font-family: "canada-type-gibson",sans-serif;
+    font-weight: 300;
     margin-top: 40px;
-  }
-  .shubh-labh-panel .btn-add-more button {
-    background: rgba(187, 241, 187, 0.56);
-  }
+}
 
-   .btn-header{
-        position: relative;
-    height: 50px;
-    border-bottom: 1px solid rgba(145, 199, 145, 0.82);
-    margin-bottom: 30px;
-  }
 
-  .sale-cash,.total-sale{
-    margin: 10px;
-    height: 50px;
-    border: rgba(51, 50, 50, 0.2) 1px solid;
-    padding: 10px;
-  }
-  .sale-cash input[type ="number"]{
-    margin-left: 20px; 
-  }
+@media (max-width: 420px){
 
-  .total-sale :nth-child(2){
-    margin-left: 40px; 
-  }
+  .main-container h1{
+      visibility: visible;
+    animation-name: fadeInDown;
+    font-size: 30px;
+    line-height: 36px;
+    /* margin: 0 0 50px 0; */
+    max-width: 90%;
+    font-family: "canada-type-gibson",sans-serif;
+    font-weight: 400;
+    margin-top: 40%;
+}
+
+.main-container h4{
+          visibility: visible;
+    animation-name: fadeInDown;
+    font-size: 20px;
+    line-height: 25px;
+    /* margin: 0 0 50px 0; */
+    max-width: 90%;
+    font-family: "canada-type-gibson",sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
 }
