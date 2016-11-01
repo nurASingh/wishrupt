@@ -86,6 +86,8 @@ a svg{
 }
 
 
+
+
 .wishrupt .navbar-inverse .navbar-nav > li > a:hover,
 .wishrupt .navbar-inverse .navbar-header   a:hover{
   color: hotpink;
@@ -136,6 +138,23 @@ padding : 5px;
     margin-top: 40px;
 }
 
+.wishrupt .navbar-inverse .navbar-header  button{
+    background-color: hotpink;
+}
+
+.sector .consulting{
+    background-color: rgba(255, 255, 0, 0.5);
+    padding: 108px;
+    left: 15px;
+}
+
+.sector .health{
+       left: 73px;
+}
+
+.sector .education{
+        left: 73px;
+}
 
 @media (max-width: 420px){
 
@@ -148,7 +167,7 @@ padding : 5px;
     max-width: 90%;
     font-family: "canada-type-gibson",sans-serif;
     font-weight: 400;
-    margin-top: 40%;
+    margin-top: 25%;
 }
 
 .main-container h4{

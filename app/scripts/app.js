@@ -23,6 +23,11 @@ angular
         controller: 'HomeCtrl',
         controllerAs: 'about'
       })
+      .when('/sector', {
+        templateUrl: 'views/sector.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'about'
+      })
       .otherwise({
         redirectTo: '/'
       });
