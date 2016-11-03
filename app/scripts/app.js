@@ -16,15 +16,30 @@ angular
     'ngTouch'
 
   ])
-  .config(function ($routeProvider, $httpProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'about'
       })
-      .when('/sector', {
+      .when('/services', {
         templateUrl: 'views/sector.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'about'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'about'
+      })
+      .when('/team', {
+        templateUrl: 'views/team.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'about'
+      })
+      .when('/philosophy', {
+        templateUrl: 'views/philosophy.html',
         controller: 'HomeCtrl',
         controllerAs: 'about'
       })
