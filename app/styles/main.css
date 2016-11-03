@@ -111,6 +111,10 @@ a svg {
   padding: 5px;
 }
 
+ .wishrupt  a{
+  text-decoration: none;
+}
+
 .main-container h1 {
   visibility: visible;
   animation-name: fadeInDown;
