@@ -10,5 +10,7 @@
 angular.module('clientApp')
   .controller('HomeCtrl', function ($scope) {
       $scope.header = '';
-
+      $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+      });
   });
