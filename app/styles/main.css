@@ -111,7 +111,7 @@ a svg {
   padding: 5px;
 }
 
- .wishrupt  a{
+.wishrupt a {
   text-decoration: none;
 }
 
@@ -183,19 +183,23 @@ a svg {
 }
 
 .wishrupt .sector .service1 {
-    background: rgba(255, 105, 180, 0.35);
+  background: rgba(255, 105, 180, 0.35);
+  width: 386px;
 }
 
 .wishrupt .sector .service2 {
-    background: rgba(0, 255, 255, 0.35);
+  background: rgba(0, 255, 255, 0.35);
+  width: 386px;
 }
 
 .wishrupt .sector .service3 {
-    background: rgba(0, 128, 0, 0.35);
+  background: rgba(0, 128, 0, 0.35);
+  width: 386px;
 }
+
 .wishrupt .sector img {
   width: 386px;
-  height: 298px;
+  height: 272px;
 }
 
 .wishrupt .top-row {
@@ -258,6 +262,26 @@ a svg {
   }
 }
 
+
+@media  (min-width : 421px) and (max-width : 979px){
+  .wishrupt .sector img {
+    width: 600px;
+    height: 280px;
+  }
+  .wishrupt .sector .service1 {
+    background: rgba(255, 105, 180, 0.35);
+    width: 600px;
+  }
+  .wishrupt .sector .service2 {
+    background: rgba(0, 255, 255, 0.35);
+    width: 600px;
+  }
+  .wishrupt .sector .service3 {
+    background: rgba(0, 128, 0, 0.35);
+    width: 600px;
+  }
+}
+
 @media (max-width: 420px) {
   .main-container h1 {
     visibility: visible;
@@ -282,19 +306,29 @@ a svg {
     margin-top: 20px;
   }
   .wishrupt .sector img {
-    width: 350px;
+    width: 330px;
     height: 280px;
   }
   .wishrupt .my-container {
     margin-top: 0%;
   }
-
-  .wishrupt .menu{
-      width: 70%;
+  .wishrupt .menu {
+    width: 70%;
     float: right;
     margin-right: 2px;
     margin-top: -8px;
     background-color:rgba(179, 230, 190, 0.81);
   }
+  .wishrupt .sector .service1 {
+    background: rgba(255, 105, 180, 0.35);
+    width: 330px;
+  }
+  .wishrupt .sector .service2 {
+    background: rgba(0, 255, 255, 0.35);
+    width: 330px;
+  }
+  .wishrupt .sector .service3 {
+    background: rgba(0, 128, 0, 0.35);
+    width: 330px;
+  }
 }
-
