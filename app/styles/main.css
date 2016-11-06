@@ -271,7 +271,7 @@ a svg {
 }
 
 
-@media  (min-width : 421px) and (max-width : 1200px){
+@media  (min-width : 421px) and (max-width : 768px){
   .wishrupt .sector img {
     width: 700px;
     height: 280px;
