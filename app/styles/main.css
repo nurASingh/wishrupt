@@ -6,7 +6,7 @@
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
-  min-height: 500px;
+  
 }
 
 .row-footer {
@@ -119,7 +119,7 @@ a svg {
   visibility: visible;
   animation-name: fadeInDown;
   font-size: 40px;
-  line-height: 55px;
+  /*line-height: 55px;*/
   /* margin: 0 0 50px 0; */
   max-width: 90%;
   font-family: "canada-type-gibson", sans-serif;
@@ -131,7 +131,7 @@ a svg {
   visibility: visible;
   animation-name: fadeInDown;
   font-size: 25px;
-  line-height: 35px;
+  /*line-height: 35px;*/
   /* margin: 0 0 50px 0; */
   max-width: 90%;
   font-family: "canada-type-gibson", sans-serif;
@@ -140,7 +140,7 @@ a svg {
 }
 
 .wishrupt .navbar-inverse .navbar-header button {
-  background-color: hotpink;
+  background-color: rgba(8, 8, 8, 0.4);
 }
 
 
@@ -219,10 +219,12 @@ a svg {
 
 @-webkit-keyframes movedown {
   0% {
-    margin-top: -450px;
+    margin-top: -50px;
+    opacity:0;
   }
   100% {
     margin-top: 0px;
+    opacity:1;
   }
 }
 
@@ -231,10 +233,12 @@ a svg {
 
 @keyframes movedown {
   0% {
-    margin-top: -450px;
+    margin-top: -50px;
+    opacity:0;
   }
   100% {
     margin-top: 0px;
+    opacity:1;
   }
 }
 
@@ -244,9 +248,11 @@ a svg {
 @-webkit-keyframes moveup {
   0% {
     margin-bottom: -450px;
+    opacity:0;
   }
   100% {
     margin-bottom: 0px;
+    opacity:1;
   }
 }
 
@@ -256,29 +262,31 @@ a svg {
 @keyframes moveup {
   0% {
     margin-bottom: -450px;
+    opacity:0;
   }
   100% {
     margin-bottom: 0px;
+    opacity:1;
   }
 }
 
 
-@media  (min-width : 421px) and (max-width : 979px){
+@media  (min-width : 421px) and (max-width : 1200px){
   .wishrupt .sector img {
-    width: 600px;
+    width: 700px;
     height: 280px;
   }
   .wishrupt .sector .service1 {
     background: rgba(255, 105, 180, 0.35);
-    width: 600px;
+    width: 700px;
   }
   .wishrupt .sector .service2 {
     background: rgba(0, 255, 255, 0.35);
-    width: 600px;
+    width: 700px;
   }
   .wishrupt .sector .service3 {
     background: rgba(0, 128, 0, 0.35);
-    width: 600px;
+    width: 700px;
   }
 }
 
@@ -317,7 +325,7 @@ a svg {
     float: right;
     margin-right: 2px;
     margin-top: -8px;
-    background-color:rgba(179, 230, 190, 0.81);
+    background-color:rgba(8, 8, 8, 0.4);
   }
   .wishrupt .sector .service1 {
     background: rgba(255, 105, 180, 0.35);
