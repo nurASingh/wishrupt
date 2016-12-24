@@ -1,9 +1,9 @@
 <!doctype html>
-<html ng-app="clientApp" >
+<html ng-app="wishruptApp">
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Wishrupt</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -13,11 +13,12 @@
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:css(.tmp) styles/main.css -->
-	 <link href="styles/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="styles/font-awesome.min.css" rel="stylesheet">
-    <link href="styles/bootstrap-social.css" rel="stylesheet">
+	<link href="styles/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="styles/font-awesome.min.css" rel="stylesheet">
+	<link href="styles/bootstrap-social.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/icon.css">
 	<!-- endbuild -->
 </head>
 
@@ -45,10 +46,10 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="#/Services">
-							<span class="glyphicon" aria-hidden="true"></span>Services</a>
+						<a href="#/Product">
+							<span class="glyphicon" aria-hidden="true"></span>Product</a>
 					</li>
-					<li><a href="#/team"><span class="glyphicon" aria-hidden="true"></span>Team</a></li>
+					<li ng-hide="true"><a href="#/Services"><span class="glyphicon" aria-hidden="true"></span>Services</a></li>
 					<li><a href="#/philosophy"><span class="glyphicon " aria-hidden="true"></span>Philosophy</a></li>
 					<li><a href="#/Contact"><span class="glyphicon " aria-hidden="true"></span>Contact</a></li>
 				</ul>
@@ -60,7 +61,29 @@
 		<div ng-view=""></div>
 	</div>
 
+	<div class=" my-container">
+		<footer id="colophon" class="site-footer">
+			<div class="row style-dark-bg footer-center footer-last ">
+				<!--<div class="footer-logo col-sm-6 col-xs-12 mobile-top">
+					<img class="aligncenter wp-image-55227 " src="images/new_logo.png" width="160" height="125">
+				</div>-->
+				<div class="col-sm-12 col-xs-12 style-dark limit-width no-top-padding no-h-padding no-bottom-padding">
+					<div class="uncell  pos-middle text-center ">
+						<div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.facebook.com/wishrupt/" target="_blank"><i class="fa fa-facebook"></i></a></div>
+						<div class="social-icon icon-box icon-box-top icon-inline"><a href="https://twitter.com/wishrupt" target="_blank"><i class="fa fa-twitter"></i></a></div>
+						<div class="social-icon icon-box icon-box-top icon-inline"><a href="https://in.linkedin.com/in/arunk-singh" target="_blank"><i class="fa fa-linkedin-square"></i></a></div>
 
+					</div>
+					<div class="site-info uncell  pos-middle text-center">
+						<p>© 2016 Wishrupt All rights reserved | Designed with <i class="fa fa-heart"></i> by Wishrupt Team</p>
+					</div>
+					<!-- site info -->
+				</div>
+				
+			</div>
+
+		</footer>
+	</div>
 
 
 

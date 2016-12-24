@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('clientApp', [
+  .module('wishruptApp', [
     'ngCookies',
     'ngResource',
     'ngRoute',
@@ -23,7 +23,7 @@ angular
         controller: 'HomeCtrl',
         controllerAs: 'about'
       })
-      .when('/Services', {
+      .when('/Product', {
         templateUrl: 'views/sector.html',
         controller: 'HomeCtrl',
         controllerAs: 'about'
